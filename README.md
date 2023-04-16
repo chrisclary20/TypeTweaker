@@ -4,7 +4,7 @@ TypeTweaker is a web-based typing game that challenges your typing speed and acc
 
 ## Getting Started
 
--- To play the game, simply open the TypeTweaker web page in your browser and click the "Start" button. The game will display a random phrase, and you will have to type it as quickly and accurately as possible. Once you have completed the phrase, the game will display your score and allow you to play again. --
+--To play the game, simply open the TypeTweaker web page in your browser and click the "Start" button. The game will display a random phrase, and you will have to type it as quickly and accurately as possible. Once you have completed the phrase, the game will display your score and allow you to play again.--
 
 ## Features
 
