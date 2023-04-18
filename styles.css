@@ -20,14 +20,15 @@ button:hover {
 
 #header {
     color: white;
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: xx-large;
-    position: absolute;
-    top: 30%;
-    left: 37%;
-    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 45vh;
+    min-width: 100vw;
 }
 
 .main-container {
@@ -35,5 +36,4 @@ button:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    min-height: 100%;
 }
