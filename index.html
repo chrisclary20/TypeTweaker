@@ -9,15 +9,22 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header class="animate__animated animate__flip" id="header">TypeTweaker</header>
-   <div class="main-container"> 
+   <header class="animate__animated animate__flip" id="logo">TypeTweaker</header>
+   <div id="main-container"> 
         <ul>
             <li id="start-btn"><button>Start</button></li>
             <li id="highscore-btn"><button>High Score</button></li>
             <li id="about-btn"><button>About</button></li>
         </ul>
    </div>
+   <div id="game-container" style="display: none;">
+        <p id="timer">Time: 60s</p>
+        <p id="quote"></p>
+        <input type="text" id="input-box">
+   </div>
+
 
    <script src="script.js"></script>
 </body>
 </html>
+
