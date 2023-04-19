@@ -20,7 +20,7 @@ TypeTweaker is a web-based typing game that challenges your typing speed and acc
 - CSS3
 - JavaScript
 - Animate.css for CSS animations
-- dictionaryapi.dev for accessing the dictionary API
+- Quotable API (https://github.com/lukePeavey/quotable)
 
 ## Contributing
 
