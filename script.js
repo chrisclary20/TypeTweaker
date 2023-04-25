@@ -4,13 +4,15 @@ const aboutBtn = document.getElementById('about-btn')
 const logo = document.getElementById('logo')
 const mainContainer = document.getElementById('main-container')
 const gameContainer = document.getElementById('game-container')
-const randomQuoteAPI = "https://api.quotable.io/random?minLength=45&maxLength=200"
+const randomQuoteAPI = "https://api.quotable.io/random?minLength=25&maxLength=87"
 const inputBox = document.getElementById('input-box')
 const quoteBox = document.getElementById('quote')
 const timerElement = document.getElementById('timer')
 const wpmElement = document.getElementById('wpm')
 const nextBtn = document.getElementById('nxt-btn')
 const authorSource = document.getElementById('author-source')
+const lightDarkMode = document.getElementById('light-dark-mode')
+const htmlBody = document.getElementById('body')
 
 let currentQuoteData = null
 let currentCharIndex = 0
@@ -91,33 +93,43 @@ function handleInput() {
 
 
 
-let startTime;
-let timerInterval;
+let startTime
+let timerInterval
 
 function startTimer() {
-  clearInterval(timerInterval);
-  timerElement.innerText = 0;
-  startTime = new Date();
+  clearInterval(timerInterval)
+  timerElement.innerText = 0
+  startTime = new Date()
   timerInterval = setInterval(() => {
-    timerElement.innerText = getTimerTime();
-  }, 1000);
+    timerElement.innerText = getTimerTime()
+  }, 1000)
 }
 
 function getTimerTime() {
-  return Math.floor((new Date() - startTime) / 1000);
+  return Math.floor((new Date() - startTime) / 1000)
 }
 
 startBtn.addEventListener('click', function () {
-  mainContainer.classList.add('animate__animated', 'animate__backOutLeft');
-  mainContainer.style.display = 'none';
-  logo.classList.remove('animate__animated', 'animate__flip');
-  logo.classList.add('animate__animated', 'animate__backOutLeft');
-  gameContainer.classList.add('animate__animated', 'animate__backInDown');
-  gameContainer.style.display = 'block';
-  renderRandomQuote();
+  mainContainer.classList.add('animate__animated', 'animate__backOutLeft')
+  mainContainer.style.display = 'none'
+  logo.classList.remove('animate__animated', 'animate__flip')
+  logo.classList.add('animate__animated', 'animate__backOutLeft')
+  gameContainer.classList.add('animate__animated', 'animate__backInDown')
+  gameContainer.style.display = 'block'
+  renderRandomQuote()
 });
 
 nextBtn.addEventListener('click', function () {
   inputBox.removeAttribute('disabled', 'true')
   renderRandomQuote();
+})
+
+lightDarkMode.addEventListener('click', function () {
+  if (lightDarkMode.innerHTML === 'Light Mode') {
+    htmlBody.style.backgroundColor = '#747e94'
+    lightDarkMode.innerHTML = 'Dark Mode' 
+  } else {
+    htmlBody.style.backgroundColor = '#282c34'
+    lightDarkMode.innerHTML = 'Light Mode'
+  }
 })
