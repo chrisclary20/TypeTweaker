@@ -4,7 +4,7 @@ TypeTweaker is a web-based typing test that challenges your typing speed and acc
 
 ## Getting Started
 
-~~Simply click on the github pages link.~~
+Simply click on the github pages link.
 
 ## Features
 
