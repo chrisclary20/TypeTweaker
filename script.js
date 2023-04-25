@@ -4,7 +4,7 @@ const aboutBtn = document.getElementById('about-btn')
 const logo = document.getElementById('logo')
 const mainContainer = document.getElementById('main-container')
 const gameContainer = document.getElementById('game-container')
-const randomQuoteAPI = "https://api.quotable.io/random?minLength=25&maxLength=87"
+const randomQuoteAPI = "https://api.quotable.io/random?minLength=45&maxLength=200"
 const inputBox = document.getElementById('input-box')
 const quoteBox = document.getElementById('quote')
 const timerElement = document.getElementById('timer')
