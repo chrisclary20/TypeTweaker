@@ -1,7 +1,11 @@
 body, html {
     height: 100%;
-    background-color: rgb(0, 0, 0);
+    background-color: #282c34;
     overflow: hidden;
+}
+
+ul {
+    list-style-type: none;
 }
 
 button {
@@ -67,7 +71,7 @@ button:hover {
 }
 
 .correct {
-    color: green;
+    color: rgb(3, 199, 3);
 }
 
 .incorrect {
