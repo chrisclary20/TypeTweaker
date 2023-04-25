@@ -52,7 +52,7 @@ button:hover {
 
 #input-box {
     resize: none;
-    width: 100%;
+    width: 80%;
     height: 200px;
     box-sizing: border-box;
     font-size: 16px;
@@ -64,4 +64,21 @@ button:hover {
     color: aliceblue;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: larger;
+}
+
+.correct {
+    color: green;
+}
+
+.incorrect {
+    color: red;
+    text-decoration: underline;
+}
+
+.untouched {
+    color: white;
+  }
+  
+#nxt-btn {
+    display: none;
 }
